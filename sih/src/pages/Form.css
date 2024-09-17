@@ -1,0 +1,99 @@
+/* Main form styling */
+body{
+    background:  url('background1.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: 100%;
+}
+.main_form {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #d9d7d7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .main_form h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Inner form styling */
+  .second_main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .second_main label {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .second_main input[type="text"],
+  .second_main input[type="number"],
+  .second_main select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .second_main select {
+    background-color: white;
+  }
+  
+  /* .second_main input[type="number"] {
+    -moz-appearance: textfield;
+  }
+   */
+  .second_main input[type="number"]::-webkit-outer-spin-button,
+  .second_main input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Buttons styling */
+  .second_main button {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .first {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .second {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .first:hover {
+    background-color: #218838;
+  }
+  
+  .second:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main_form {
+      width: 90%;
+    }
+  
+    .second_main {
+      flex-direction: column;
+    }
+  }
+  

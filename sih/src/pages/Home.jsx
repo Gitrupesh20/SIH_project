@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-
+import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="showcase-container">
@@ -45,7 +45,8 @@ function Home() {
       <section className="faculty-profiles">
         <h2>Faculty profiles</h2>
         <p>Our website showcases detailed faculty publication records that can be filtered and exported based on various criteria.</p> 
-        <button className="view-projects-btn">See Profiles</button>
+        <Link to='/form'>
+        <button className="view-projects-btn">See Profiles</button></Link>
         <div className="profile-grid">
           <div className="profile-card">
             <img src="/images/publications.jpg" alt="Publications" className="profile-card-image" />
